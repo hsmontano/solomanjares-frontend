@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo manjares</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+</head>
+
+<body class="fondo-index">
+    <header class="header">
+        <div class="container">
+            <img src="../images/logo.png" class="logo" alt="Solo manjares">
+            <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link">Cotizar producto</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./admin/admin.html">login admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="/images/fria.jpg" alt="">
+        <div class="container-banner">
+            <h1 class="banner__title">SOLO MANJARES</h1>
+            <p class="banner__text">Bienvenidos a nuestro manjar</p>
+        </div>
+    </div>
+    <main class="main">
+        <section class="info">
+            <div class="container-banner" id="info-banner">
+                
+            </div>
+            <div class="container-detail" id="product-detail">
+                
+            </div>
+        </section>
+    </main>
+    <hr>
+    <div class="container-contact">  
+        <form id="contact" action="" method="post">
+          <h3> Contact Us</h3>
+          <span><i class="fas fa-phone-alt"> (+57) 316 842 5563</i></span> <span><i class="fas fa-at"> solomanjares18@manjares.com</i></span><h4>Contact us for custom quote</h4>
+          <fieldset>
+            <input placeholder="Tu nombre" type="text" name="name" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Tu apellido" type="text" name="lastname" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Tu numero de teléfono" name="phone"type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Tu correo electrónico" name="email" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <select name="product" id="product">
+              <option selected disabled>Seleccione...</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <button type="button" class="btn btn-contact" id="btnContactUs">Enviar</button>
+          </fieldset>
+        </form>
+      </div>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"> Facebook</i></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"> Twitter</i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube-square"> Youtube</i></a>
+        </div>
+        <p class="copy">&copy; Todos los derechos reservados a Joan Andr&eacute;s Soliman</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

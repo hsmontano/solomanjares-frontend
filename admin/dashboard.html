@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Solo manjares | dashboard </title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+</head>
+
+<body class="fondo-dashboard">
+    <section id="sideMenu">
+        <nav>
+            <a href="#table" id="home"><i class="fa fa-home"></i>Home</a>
+            <a href="#form-dashboard" id="register-product"><i class="fa fa-cart-plus"
+                    aria-hidden="true"></i>Registrar un producto</a>
+            <a href="#form-category" id="register-category"><i class="fa fa-plus-square" aria-hidden="true"></i> Registrar categor&iacute;a</a>
+        </nav>
+    </section>
+
+    <header id="header-dashboard">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <div class="search-area">
+            <input type="text" name="" id="" value="">
+        </div>
+        <div class="user-area">
+            <!-- <a href="#" class="add">+ add</a>
+            <a href="#" class="notification">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="circle">3</span>
+            </a> -->
+            <a href="/index.html">
+                <div class="user-img"></div>
+                <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+            </a>
+
+        </div>
+    </header>
+
+    <section id="content-area">
+        <div class="heading">
+            <h1>Dashboard</h1>
+            <p>Welcome to Solo manjares</p>
+        </div>
+        <table class="table" id="table">
+            <thead class="thead">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Created</th>
+                    <th>Operation</th>
+                </tr>
+            </thead>
+            <tbody class="tbody" id="tbody-dashboard">
+
+            </tbody>
+        </table>
+        <!-- formulario para registrar un producto -->
+        <form class="form-dashboard" id="form-dashboard" method="POST" enctype="multipart/form-data">
+            <div id="mensaje-saved">
+
+            </div>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Genovessa">
+            </div>
+            <div class="form-group">
+                <label for="description">Descripci&oacute;n</label>
+                <textarea class="form-control" name="description" id="description" placeholder="Descripcion de producto"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="category">Categor&iacute;a</label>
+                <select class="form-control" name="categoryId" id="id-category">
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="files">Imagen</label>
+                <input type="file" class="form-control-file" name="image" id="files" multiple>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-dashboard" id="btnSaveProduct">Guardar producto</button>
+            </div>
+        </form>
+        <!-- formulario para editar un producto -->
+        <form class="form-dashboard" id="form-edit" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="categoryId" id="category-id">
+            <input type="hidden" name="productId" id="product-id">
+            <input type="hidden" name="imageId" id="image-id">
+            <div class="form-group">
+                <label for="edit-name">Nombre</label>
+                <input type="text" class="form-control" name="editname" id="edit-name" placeholder="Genovessa">
+            </div>
+            <div class="form-group">
+                <label for="edit-description">Descripci&oacute;n</label>
+                <textarea class="form-control" name="editdescription" id="edit-description" placeholder="Descripcion de producto" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="edit-files">Imagen</label>
+                <input type="file" class="form-control-file" name="image" id="edit-files"
+                    multiple>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-dashboard" id="btnEditProduct">Editar producto</button>
+            </div>
+        </form>
+        <form id="form-category">
+            <div class="form-group">
+                <label for="category">Nombre de categora</label>
+                <input type="text" class="form-control" name="category" id="category" placeholder="Tortas">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-dashboard" id="btnSaveCategory">Guardar categor&iacute;a</button>
+            </div>     
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
